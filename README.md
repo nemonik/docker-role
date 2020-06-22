@@ -2,7 +2,7 @@
 
 ![Basic role syntax check](https://github.com/nemonik/docker-role/workflows/Basic%20role%20syntax%20check/badge.svg)
 
-An Ansible role used to install Docker onCentOS 7, Alpine 3.10 and Ubuntu Bionic instances.
+An Ansible role used to install Docker. Verified to work on CentOS 7, Alpine 3.10 and Ubuntu Bionic instances.
 
 ## Requirements
 
