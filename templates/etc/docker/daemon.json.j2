@@ -1,0 +1,8 @@
+{ {% if registry == 'yes' %} 
+"insecure-registries": ["{{ registry_host }}:{{ registry_port }}"]{% if passthrough_registry == 'yes' %},{% endif %}
+{% endif %}
+
+{% if passthrough_registry == 'yes' %}
+"registry-mirrors": ["http://{{ passthrough_registry_host }}:{{ passthrough_registry_port }}"]
+{% endif %}
+}
