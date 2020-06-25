@@ -3,9 +3,9 @@
  {
    "default":
    {
-     "httpProxy": "{{ http_proxy }}",
-     "httpsProxy": "{{ https_proxy }}",
-     "noProxy": "{{ no_proxy }}"
+     "httpProxy": "{{ http_proxy | default('') }}",
+     "httpsProxy": "{{ https_proxy | default('') }}",
+     "noProxy": "{{ no_proxy | default('') }}"
    }
  }
 }
